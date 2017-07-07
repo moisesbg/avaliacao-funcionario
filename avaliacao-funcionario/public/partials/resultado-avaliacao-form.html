@@ -1,0 +1,36 @@
+<div class="container">
+    <h2>Resultado da avaliação</h2>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="funcionario" class="col-sm-1 control-label">Funcionário:</label>
+            <div class="col-sm-6" ng-controller="FuncionarioListController as funcVm">
+                <select name="id" ng-model="vm.id" class="form-control" id="id">
+          			<option ng-repeat="item in funcVm.funcionarios" value="{{item._id}}">
+						  {{item.nome}}
+					</option>
+        		</select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="competencia" class="col-sm-1 control-label">Competência:</label>
+            <div class="col-sm-2">
+                <input type="text" placeholder="03-2017" class="form-control text-right" ng-model="vm.competencia" id="competencia">
+            </div>
+            <div class="col-sm-2">
+                <a class="btn btn-primary" ng-click="vm.consultar()">
+                    <span>Consultar</span>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="mediaFuncionario" class="col-sm-3 control-label">Média do funcionário: {{vm.media}}</label>
+            <label for="mediaDepartamento" class="col-sm-3 control-label">Média do departamento: {{vm.mediaDepartamento}}</label>
+            <label for="resultado" class="col-sm-1 control-label">{{vm.resultado}}</label>
+        </div>
+        <div class="form-group">
+            {{vm.erro}}
+        </div>
+    </form>
+</div>
+<!-- /.container -->

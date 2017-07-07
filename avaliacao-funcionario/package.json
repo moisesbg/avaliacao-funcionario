@@ -1,0 +1,19 @@
+{
+  "name": "projeto-final",
+  "version": "1.0.0",
+  "description": "Projeto para avaliação do curso de JS da Betha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moises Becker Guimaraes",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "consign": "^0.1.4",
+    "express": "^4.15.2",
+    "mongodb": "^2.2.26",
+    "mongoose": "^4.9.3",
+    "q": "^1.5.0"
+  }
+}

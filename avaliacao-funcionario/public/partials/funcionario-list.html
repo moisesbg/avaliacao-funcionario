@@ -1,0 +1,51 @@
+<div class="container">
+  <h2>Funcionários</h2>
+  <form class="form-inline">
+    <div class="form-group">
+      <label class="control-label" for="busca">Filtro:</label>
+      <input class="form-control" type="text" name="busca" ng-model="vm.busca">
+      <a class="btn btn-primary" ng-click="vm.buscar()">
+        <span>Buscar</span>
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </a>
+    </div>
+    <a class="btn btn-success pull-right" href="#/funcionarios/new">
+      <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+      <span>Novo Funcionário</span>
+    </a>
+  </form>
+  <div class="table-responsive">
+    <table class="table table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Cargo</th>
+          <th>Depto</th>
+          <th>Admissão</th>
+          <th>Gestor</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="funcionario in vm.funcionarios">
+          <td>{{funcionario.nome}}</td>
+          <td>{{funcionario.cargo}}</td>
+          <td>{{funcionario.departamento.codigo}} - {{funcionario.departamento.nome}}</td>
+          <td>{{funcionario.dataAdmissao | date:'dd/MM/yyyy'}}</td> <!--ver o momentJS, porque tá com problema no dia, retornando 1 dia a menos -->
+            
+            
+          <td>{{funcionario.gestor.nome}}</td>
+          <td class="text-right">
+            <a class="btn btn-link" ng-href="{{'#/funcionarios/' + funcionario._id}}">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </a>
+            <button type="button" class="btn btn-link" ng-click="vm.remover(funcionario)">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- /.container -->
