@@ -1,5 +1,5 @@
 # avaliacao-funcionario
-Aplicação para estudo de conceitos do MEAN
+Aplicação para para avaliação do curso de Javascript da Betha Sistemas fundamentado em conceitos do MEAN
 
 
 # Dependências
@@ -19,4 +19,4 @@ No diretório do projeto execute:
 
 ### `npm start`
 
-No diretório database estão alguns dados para demonstração
+No diretório database estão alguns dados que podem ser importados no mongo para demonstração
