@@ -1,3 +1,122 @@
-{"_id":{"$oid":"5904eab063b69e0ebc26925a"},"nome":"Daniel Camilo","cargo":"Coordenador","dataAdmissao":{"$date":"2015-08-14T00:00:00.000Z"},"avaliacoes":[],"departamento":{"codigo":"03.01.01","nome":"F. S. Pessoal"},"__v":0}
-{"_id":{"$oid":"5904eae063b69e0ebc26925b"},"nome":"Paulo Henrique Eli","cargo":"Analista de Sistemas II","dataAdmissao":{"$date":"2015-06-24T16:57:29.338Z"},"gestor":{"$oid":"5904eab063b69e0ebc26925a"},"avaliacoes":[],"departamento":{"nome":"F. S. Pessoal","codigo":"03.01.01"},"__v":0}
-{"_id":{"$oid":"591711cf3eef023108490865"},"nome":"Moisés Becker Guimarães","cargo":"Analista de Sistemas III","dataAdmissao":{"$date":"2000-04-15T16:57:29.338Z"},"gestor":{"$oid":"5904eab063b69e0ebc26925a"},"avaliacoes":[null,{"avaliacao":{"$oid":"5904ee5a63b69e0ebc269260"},"competencia":"02-2017","_id":{"$oid":"595be3894b170708b81e0bca"},"notasQuestoes":[]}],"departamento":{"nome":"F. S. Pessoal","codigo":"03.01.01"},"__v":0}
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5904eab063b69e0ebc26925a"),
+	"avaliacoes" : [ ],
+	"cargo" : "Coordenador",
+	"dataAdmissao" : ISODate("2015-08-13T21:00:00.000-03:00"),
+	"departamento" : {
+		"nome" : "F. S. Pessoal",
+		"codigo" : "03.01.01"
+	},
+	"nome" : "Ramiro Castillo"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5904eae063b69e0ebc26925b"),
+	"avaliacoes" : [
+		{
+			"_id" : ObjectId("595e8b832e1a6528507fb298"),
+			"competencia" : "04-2017",
+			"avaliacao" : ObjectId("5904eccc63b69e0ebc26925e"),
+			"notasQuestoes" : [
+				NumberInt("90"),
+				NumberInt("95"),
+				NumberInt("100")
+			]
+		},
+		{
+			"_id" : ObjectId("595e8b832e1a6528507fb297"),
+			"competencia" : "04-2017",
+			"avaliacao" : ObjectId("5904ee5a63b69e0ebc269260"),
+			"notasQuestoes" : [
+				NumberInt("92"),
+				NumberInt("98"),
+				NumberInt("100")
+			]
+		}
+	],
+	"cargo" : "Analista de Sistemas II",
+	"dataAdmissao" : ISODate("2015-06-24T13:57:29.338-03:00"),
+	"departamento" : {
+		"nome" : "F. S. Pessoal",
+		"codigo" : "03.01.01"
+	},
+	"gestor" : ObjectId("5904eab063b69e0ebc26925a"),
+	"nome" : "Pablo Alguera"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("591711cf3eef023108490865"),
+	"avaliacoes" : [
+		{
+			"_id" : ObjectId("595cef89f1f11727e4accf72"),
+			"competencia" : "04-2017",
+			"avaliacao" : ObjectId("5904eccc63b69e0ebc26925e"),
+			"notasQuestoes" : [
+				NumberInt("80"),
+				NumberInt("85"),
+				NumberInt("90")
+			]
+		},
+		{
+			"_id" : ObjectId("595e2e4ac4cb572a00da7c2f"),
+			"competencia" : "04-2017",
+			"avaliacao" : ObjectId("5904ee5a63b69e0ebc269260"),
+			"notasQuestoes" : [
+				NumberInt("60"),
+				NumberInt("65"),
+				NumberInt("70")
+			]
+		}
+	],
+	"cargo" : "Analista de Sistemas III",
+	"dataAdmissao" : ISODate("2000-04-15T13:57:29.338-03:00"),
+	"departamento" : {
+		"nome" : "F. S. Pessoal",
+		"codigo" : "03.01.01"
+	},
+	"gestor" : ObjectId("5904eab063b69e0ebc26925a"),
+	"nome" : "Juan Cruz"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("595fdaf2b66bcf3398d0fd60"),
+	"avaliacoes" : [
+		{
+			"_id" : ObjectId("595fdb2db66bcf3398d0fd63"),
+			"avaliacao" : ObjectId("5904eccc63b69e0ebc26925e"),
+			"competencia" : "04-2017",
+			"notasQuestoes" : [
+				NumberInt("95"),
+				NumberInt("95"),
+				NumberInt("100")
+			]
+		},
+		{
+			"_id" : ObjectId("595fdb2db66bcf3398d0fd62"),
+			"avaliacao" : ObjectId("5904ee5a63b69e0ebc269260"),
+			"competencia" : "04-2017",
+			"notasQuestoes" : [
+				NumberInt("90"),
+				NumberInt("90"),
+				NumberInt("90")
+			]
+		},
+		{
+			"_id" : ObjectId("595fdb2db66bcf3398d0fd61"),
+			"avaliacao" : ObjectId("595fd86db66bcf3398d0fd5f"),
+			"notasQuestoes" : [
+				NumberInt("98"),
+				NumberInt("100")
+			]
+		}
+	],
+	"cargo" : "Programador",
+	"dataAdmissao" : ISODate("2012-05-15T00:00:00.000-03:00"),
+	"departamento" : {
+		"nome" : "F. S. Pessoal",
+		"codigo" : "03.01.01"
+	},
+	"gestor" : ObjectId("591711cf3eef023108490865"),
+	"nome" : "Fernando Mojarro"
+},

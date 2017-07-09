@@ -1,2 +1,29 @@
-{"_id":{"$oid":"5904eccc63b69e0ebc26925e"},"tipo":"Avaliação gestor","questoes":["Técnica de programação","Pró-atividade","Disciplina"],"__v":0}
-{"_id":{"$oid":"5904ee5a63b69e0ebc269260"},"tipo":"Auto-avaliação","questoes":["Técnica de programação","Pró-atividade","Disciplina"],"__v":0}
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5904eccc63b69e0ebc26925e"),
+	"questoes" : [
+		"Técnica de programação",
+		"Pró-atividade",
+		"Disciplina"
+	],
+	"tipo" : "Avaliação gestor"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("5904ee5a63b69e0ebc269260"),
+	"questoes" : [
+		"Técnica de programação",
+		"Pró-atividade",
+		"Disciplina"
+	],
+	"tipo" : "Auto-avaliação"
+},
+{
+	"__v" : NumberInt("0"),
+	"_id" : ObjectId("595fd86db66bcf3398d0fd5f"),
+	"questoes" : [
+		"Prestatividade",
+		"Trabalho em equipe"
+	],
+	"tipo" : "Avaliação do colega"
+},
